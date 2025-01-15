@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mrkm">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Your financial advisor that will help you to your insurance.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/script.js"></script>
-    <title>Mega Paragon</title>
+    <title>Profile | Mega Paragon</title>
+    <link rel="shortcut icon" href="assets/images/insurance-logo.png">
 </head>
 <body>
 
