@@ -4,6 +4,9 @@ tailwind.config = {
         colors: {
           primary: '#151521',
           secondary: '#ffd013ff',
+        },
+        fontFamily: {
+          primary: ["Karla, serif"]
         }
       }
     }
