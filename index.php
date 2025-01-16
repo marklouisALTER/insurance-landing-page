@@ -54,56 +54,54 @@
             </div>
 
         </div>
-
-        <!-- Faqs -->
-        <section class="max-w-4xl mx-auto p-6">
-    <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
-    <div class="space-y-4">
-      <!-- FAQ Item 1 -->
-      <div class="bg-gray-800 rounded-lg shadow-md">
-        <button class="w-full text-left px-4 py-3 focus:outline-none focus:ring-2 focus:ring-secondary" onclick="toggleFAQ(1)">
-          <div class="flex justify-between items-center">
-            <span>What is your return policy?</span>
-            <svg id="icon-1" class="w-5 h-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </div>
-        </button>
-        <div id="answer-1" class="hidden px-4 py-3 border-t border-gray-700">
-          <p>We offer a 30-day return policy. For more details, please visit our return policy page.</p>
-        </div>
-      </div>
-      <!-- FAQ Item 2 -->
-      <div class="bg-gray-800 rounded-lg shadow-md">
-        <button class="w-full text-left px-4 py-3 focus:outline-none focus:ring-2 focus:ring-secondary" onclick="toggleFAQ(2)">
-          <div class="flex justify-between items-center">
-            <span>How long does shipping take?</span>
-            <svg id="icon-2" class="w-5 h-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </div>
-        </button>
-        <div id="answer-2" class="hidden px-4 py-3 border-t border-gray-700">
-          <p>Shipping typically takes 5-7 business days. Expedited options are available at checkout.</p>
-        </div>
-      </div>
-      <!-- FAQ Item 3 -->
-      <div class="bg-gray-800 rounded-lg shadow-md">
-        <button class="w-full text-left px-4 py-3 focus:outline-none focus:ring-2 focus:ring-secondary" onclick="toggleFAQ(3)">
-          <div class="flex justify-between items-center">
-            <span>Do you ship internationally?</span>
-            <svg id="icon-3" class="w-5 h-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </div>
-        </button>
-        <div id="answer-3" class="hidden px-4 py-3 border-t border-gray-700">
-          <p>Yes, we ship to select countries. Please check our shipping information page for more details.</p>
-        </div>
-      </div>
-    </div>
-  </section>
     </section>
+        <!-- Faqs -->
+        <section class="w-full bg-slate-900 h-screen flex justify-center p-6">
+          <div class="space-y-4 w-full max-w-[80vh]">
+            <!-- FAQ Item 1 -->
+            <div class="bg-gray-800 rounded-lg shadow-md">
+              <button class="text-white w-full text-left px-4 py-3" onclick="toggleFAQ(1)">
+                <div class="flex justify-between items-center">
+                  <span>What is your return policy?</span>
+                  <svg id="icon-1" class="w-5 h-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div id="answer-1" class="hidden px-4 py-3 border-t border-gray-700">
+                <p class="text-white">We offer a 30-day return policy. For more details, please visit our return policy page.</p>
+              </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="bg-gray-800 rounded-lg shadow-md">
+              <button class="text-white w-full text-left px-4 py-3" onclick="toggleFAQ(2)">
+                <div class="flex justify-between items-center">
+                  <span>How long does shipping take?</span>
+                  <svg id="icon-2" class="w-5 h-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div id="answer-2" class="hidden px-4 py-3 border-t border-gray-700">
+                <p class="text-white">Shipping typically takes 5-7 business days. Expedited options are available at checkout.</p>
+              </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="bg-gray-800 rounded-lg shadow-md">
+              <button class="text-white w-full text-left px-4 py-3" onclick="toggleFAQ(3)">
+                <div class="flex justify-between items-center">
+                  <span>Do you ship internationally?</span>
+                  <svg id="icon-3" class="w-5 h-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div id="answer-3" class="hidden px-4 py-3 border-t border-gray-700">
+                <p class="text-white">Yes, we ship to select countries. Please check our shipping information page for more details.</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
 </body>
 </html>
