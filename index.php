@@ -22,7 +22,7 @@
             <div class="w-[15rem] h-[15rem] rounded-full border-4 border-secondary">
 
             </div>
-            <div class="w-full max-w-[80vh] mt-5">
+            <div class="w-full max-w-[100vh] mt-5">
                 <div class="flex flex-col items-center mb-4 md:mb-7">
                     <h3 class="font-primary md:text-xl text-white font-semibold">Welcome! I'm 👋</h3>
                     <h1 class="text-secondary font-bold text-2xl md:text-3xl">Pauline Sanchez Moya</h1>
@@ -38,7 +38,7 @@
                 creating strategies that are both practical and effective. Let's work together to build a stable and 
                 prosperous financial journey.
                 </h5>
-                <div class="flex justify-center gap-5 mt-5 md:mt-10">
+                <div class="flex justify-center gap-5 mt-5 md:mt-10 mb-10">
                     <button class="bg-secondary text-primary font-medium font-primary py-2 px-5 rounded-md hover:bg-secondary/90 
                         transition-all delay-100 ease-in-out">
                         Join Mega Paragon
@@ -56,10 +56,67 @@
         </div>
 
         <!-- Faqs -->
-        <div>
-            <!-- Faqs Redesign -->
+        <section class="max-w-4xl mx-auto p-6">
+    <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      <!-- FAQ Item 1 -->
+      <div class="bg-gray-800 rounded-lg shadow-md">
+        <button class="w-full text-left px-4 py-3 focus:outline-none focus:ring-2 focus:ring-secondary" onclick="toggleFAQ(1)">
+          <div class="flex justify-between items-center">
+            <span>What is your return policy?</span>
+            <svg id="icon-1" class="w-5 h-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+        <div id="answer-1" class="hidden px-4 py-3 border-t border-gray-700">
+          <p>We offer a 30-day return policy. For more details, please visit our return policy page.</p>
         </div>
+      </div>
+      <!-- FAQ Item 2 -->
+      <div class="bg-gray-800 rounded-lg shadow-md">
+        <button class="w-full text-left px-4 py-3 focus:outline-none focus:ring-2 focus:ring-secondary" onclick="toggleFAQ(2)">
+          <div class="flex justify-between items-center">
+            <span>How long does shipping take?</span>
+            <svg id="icon-2" class="w-5 h-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+        <div id="answer-2" class="hidden px-4 py-3 border-t border-gray-700">
+          <p>Shipping typically takes 5-7 business days. Expedited options are available at checkout.</p>
+        </div>
+      </div>
+      <!-- FAQ Item 3 -->
+      <div class="bg-gray-800 rounded-lg shadow-md">
+        <button class="w-full text-left px-4 py-3 focus:outline-none focus:ring-2 focus:ring-secondary" onclick="toggleFAQ(3)">
+          <div class="flex justify-between items-center">
+            <span>Do you ship internationally?</span>
+            <svg id="icon-3" class="w-5 h-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+        <div id="answer-3" class="hidden px-4 py-3 border-t border-gray-700">
+          <p>Yes, we ship to select countries. Please check our shipping information page for more details.</p>
+        </div>
+      </div>
+    </div>
+  </section>
     </section>
 
 </body>
 </html>
+<script>
+    function toggleFAQ(id) {
+      const answer = document.getElementById(`answer-${id}`);
+      const icon = document.getElementById(`icon-${id}`);
+      const isHidden = answer.classList.contains('hidden');
+      document.querySelectorAll('[id^="answer-"]').forEach((el) => el.classList.add('hidden'));
+      document.querySelectorAll('[id^="icon-"]').forEach((el) => el.classList.remove('rotate-180'));
+      if (isHidden) {
+        answer.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      }
+    }
+  </script>
